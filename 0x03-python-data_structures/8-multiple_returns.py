@@ -1,7 +1,10 @@
 #!/usr/bin/python3
+
 def multiple_returns(sentence):
-    if not sentence:
-        return(0, "None")
-    count = len(sentence)
+    """ Return tuple with length of sentence and first character """
+    if len(sentence) < 1:
+        return (0, None)
+
+    slen = len(sentence)
     first_char = sentence[0]
-    return(count, first_char)
+    return (slen, first_char)
